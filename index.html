@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>X-Unity T-Shirt Printing</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+	<link rel="icon" href="image/icon.png" type="image/icon type">
+</head>
+<body>
+
+	<nav class="flex-container">
+		<div><a href="index.html">Home</a></div>
+		<div><a href="order.html">Order</a></div>
+		<div><a href="https://www.facebook.com/X-Unity-Printing-105067311099041">Our Facebook</a></div>
+	</nav>
+	<div class="cover-image"></div>
+	<hr class="hr-1">
+	<div class="data1">
+		<div><img src="image/cover.jpg" id="image1"><br><button class="btn" onclick="changeimage()">More Image</button></div>
+		<div style="font-family: Raleway"><h3 style="font-family: Do Hyeon">100% Cotton Colour T-Shirt</h3>Pre-order For Printing Any Logo</div>
+	</div>
+	<hr class="hr-2">
+	<div class="data2">
+		<div style="font-family: Raleway"><h3 style="font-family: Do Hyeon">Microfiber/Interlock</h3>The function of microfiber or Dry Fit is to absorb sweat and making you feel dry and fresh. It is now become more popular in Malaysian Community, especially used in promotional events and occasional activities.</div>
+		<div><img src="image/material2.jpg" id="image2"><br><button class="btn" onclick="changeimage2()">More Image</button></div>
+	</div>
+	<hr class="hr-2">
+	<div class="data3">
+		<div><img src="image/material4.png"></div>
+		<div style="font-family: Raleway"><h3 style="font-family: Do Hyeon">Polo Shirt</h3>A polo shirt is a form of shirt with a collar, a placket neckline with three buttons, and an optional pocket. Polo shirts are usually short sleeved; they were originally used by polo players during the 1920s.</div>
+	</div>
+	<hr class="hr-2">
+	<footer>
+		<div class="footer">
+			<div>Copyright © 2020 X-Unity Printing. All rights reserved.</div>
+			<div style="font-family:Comic Neue"><strong>Contact<br>Phone Number :60187799079<br>Email :xunity2020@gmail.com</strong></div>
+		</div>
+	</footer>
+	<script type="text/javascript">
+		var first = document.getElementById('image1');
+		var firstimagearray = ["image/cover.jpg","image/material11.jpg","image/material12.jpg"];
+		var imageindex = 0;
+
+		function changeimage(){
+			first.setAttribute("src",firstimagearray[imageindex]);
+			imageindex++;
+			if(imageindex > 2){
+				imageindex=0;
+			}
+		}
+		var sec = document.getElementById('image2');
+		var secimagearray = ["image/material2.jpg","image/material21.jpg","image/material22.jpg"];
+		var imageindex2 = 1;
+
+		function changeimage2(){
+			sec.setAttribute("src",secimagearray[imageindex2]);
+			imageindex2++;
+			if(imageindex2 > 2){
+				imageindex2=0;
+			}
+		}
+	</script>
+</body>
+</html>

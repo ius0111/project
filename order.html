@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>X-Unity T-Shirt Printing</title>
+	<link rel="stylesheet" type="text/css" href="order.css">
+	<link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+</head>
+<body>
+	<nav class="flex-container">
+		<div><a href="index.html">Home</a></div>
+		<div><a href="order.html">Order</a></div>
+		<div><a href="https://www.facebook.com/X-Unity-Printing-105067311099041">Our Facebook</a></div>
+	</nav>
+	<div class="cover-image"></div>
+	<hr class="hr-1">
+	</div>
+	<h2 style="color: white; text-align: center;">Order Form</h2>
+	<script>
+		function showresult(){
+			var x1=document.getElementById('name').value;
+			alert("Name : "+x1)
+			var x2=document.getElementById('cntnumber').value;
+			alert("Contact Number : "+x2)
+			var x3=document.getElementById('add').value;
+			alert("Address : "+x3)
+			var x4=document.getElementById('categories').value;
+			alert("Categories : "+x4)
+			var x5=document.getElementById('quantity').value;
+			alert("Quantity : "+x5)
+			var x6=document.getElementById('note').value;
+			alert("Note : "+x6)
+		}
+	</script>
+	<div>
+		<form>
+				<label><b>Name</b></label>
+				<input type="text" name="name" id="name" placeholder="Write Your Full Name Here">
+				<label><b>Contact Number</b></label>
+				<input class="cnt" type="number" name="contactnumber" id="cntnumber" placeholder="Exp : 01xxxxxxxxxx"><br>
+				<label><b>Address</b></label>
+				<input type="text" name="address" id="add" placeholder="Address">
+				<label><b>Categories</b></label>
+				<select name="categories" id="categories">
+					<option>Cotton</option>
+					<option>Microfiber/Interlock</option>
+					<option>Polo Shirt</option>
+				</select>
+				<label><b>Quantity</b></label>
+				<input type="number" name="quantity" min="10" id="quantity" placeholder="Minimum Order 10">
+				<label><b>Note</b></label>
+				<textarea id="note" name="Note" placeholder="Write Your Note Here" style="height:200px"></textarea>
+				<button class="button" onclick="showresult()">Confirm Order</button>
+		</form>
+	</div>
+	<footer>
+		<div class="footer">
+			<div>Copyright © 2020 X-Unity Printing. All rights reserved.</div>
+			<div style="font-family:Comic Neue"><strong>Contact<br>Phone Number :60187799079<br>Email :xunity2020@gmail.com</strong></div>
+		</div>
+	</footer>
+</body>
+</html>

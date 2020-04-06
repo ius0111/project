@@ -6,6 +6,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+	<link rel="icon" href="image/icon.png" type="image/icon type">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -19,29 +20,67 @@
 	</div>
 	<h2 style="color: white; text-align: center;">Order Form</h2>
 	<script>
+		function name(){
+			var a = document.getElementById('name');
+			var aa = a.value.length;
+			if(aa === 0){
+				alert('Pls fill the required column');
+				return false;
+			}else{
+				return true;
+			}
+		}
+		function cntnumber(){
+			var b = document.getElementById('cntnumber');
+			var bb = b.value.length;
+			if(bb === 0){
+				alert('Pls fill the required column');
+				return false;
+			}else{
+				return true;
+			}	
+		}
+		function add(){
+			var c = document.getElementById('add');
+			var cc = c.value.length;
+			if(cc === 0){
+				alert('Pls fill the required column');
+				return false;
+			}else{
+				return true;
+			}	
+		}
+		function quantity(){
+			var d = document.getElementById('quantity');
+			var dd = d.value.length;
+			if(dd === 0){
+				alert('Pls fill the required column');
+				return false;
+			}else{
+				return true;
+			}
+		}
 		function showresult(){
-			var x1=document.getElementById('name').value;
-			alert("Name : "+x1)
-			var x2=document.getElementById('cntnumber').value;
-			alert("Contact Number : "+x2)
-			var x3=document.getElementById('add').value;
-			alert("Address : "+x3)
-			var x4=document.getElementById('categories').value;
-			alert("Categories : "+x4)
-			var x5=document.getElementById('quantity').value;
-			alert("Quantity : "+x5)
-			var x6=document.getElementById('note').value;
-			alert("Note : "+x6)
+			if (name()){
+				if (cntnumber()) {
+					if (add()) {
+						if (quantity()) {
+							alert('Submited')
+						}
+					}
+				}
+			}
+			return false;
 		}
 	</script>
 	<div>
 		<form>
 				<label><b>Name</b></label>
-				<input type="text" name="name" id="name" placeholder="Write Your Full Name Here">
+				<input type="text" name="name" id="name" placeholder="Write Your Full Name Here" required>
 				<label><b>Contact Number</b></label>
-				<input class="cnt" type="number" name="contactnumber" id="cntnumber" placeholder="Exp : 01xxxxxxxxxx"><br>
+				<input class="cnt" type="number" name="contactnumber" id="cntnumber" placeholder="Exp : 01xxxxxxxxxx" required><br>
 				<label><b>Address</b></label>
-				<input type="text" name="address" id="add" placeholder="Address">
+				<input type="text" name="address" id="add" placeholder="Address" required>
 				<label><b>Categories</b></label>
 				<select name="categories" id="categories">
 					<option>Cotton</option>
@@ -49,10 +88,10 @@
 					<option>Polo Shirt</option>
 				</select>
 				<label><b>Quantity</b></label>
-				<input type="number" name="quantity" min="10" id="quantity" placeholder="Minimum Order 10">
+				<input type="number" name="quantity" min="10" id="quantity" placeholder="Minimum Order 10" required>
 				<label><b>Note</b></label>
 				<textarea id="note" name="Note" placeholder="Write Your Note Here" style="height:200px"></textarea>
-				<button class="button" onclick="showresult()">Confirm Order</button>
+				<input type="submit" class="button" onclick="showresult()" value="Confirm">
 		</form>
 	</div>
 	<footer>

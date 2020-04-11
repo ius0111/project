@@ -74,21 +74,21 @@
 		}
 	</script>
 	<div>
-		<form>
+		<form action="results.html" method="GET">
 				<label><b>Name</b></label>
-				<input type="text" name="name" id="name" placeholder="Write Your Full Name Here" required>
+				<input type="text" name="Name" id="name" placeholder="Write Your Full Name Here" required>
 				<label><b>Contact Number</b></label>
-				<input class="cnt" type="number" name="contactnumber" id="cntnumber" placeholder="Exp : 01xxxxxxxxxx" required><br>
+				<input class="cnt" type="number" name="Contactnumber" id="cntnumber" placeholder="Exp : 01xxxxxxxxxx" required><br>
 				<label><b>Address</b></label>
-				<input type="text" name="address" id="add" placeholder="Address" required>
+				<input type="text" name="Address" id="add" placeholder="Address" required>
 				<label><b>Categories</b></label>
-				<select name="categories" id="categories">
+				<select name="Categories" id="categories">
 					<option>Cotton</option>
 					<option>Microfiber/Interlock</option>
 					<option>Polo Shirt</option>
 				</select>
 				<label><b>Quantity</b></label>
-				<input type="number" name="quantity" min="10" id="quantity" placeholder="Minimum Order 10" required>
+				<input type="number" name="Quantity" min="10" id="quantity" placeholder="Minimum Order 10" required>
 				<label><b>Note</b></label>
 				<textarea id="note" name="Note" placeholder="Write Your Note Here" style="height:200px"></textarea>
 				<input type="submit" class="button" onclick="showresult()" value="Confirm">

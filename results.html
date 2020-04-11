@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>X-Unity T-Shirt Printing</title>
+	<link rel="stylesheet" type="text/css" href="results.css">
+	<link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+	<link rel="icon" href="image/icon.png" type="image/icon type">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<nav class="flex-container">
+		<div><a href="index.html">Home</a></div>
+		<div><a href="order.html">Order</a></div>
+		<div><a href="https://www.facebook.com/X-Unity-Printing-105067311099041">Facebook</a></div>
+	</nav>
+	<div class="cover-image"></div>
+	<hr class="hr-1">
+	</div>
+	<h2 style="color: white; text-align: center;">Invoice Record</h2>
+	<div id="results" class="results"></div>
+	<script>
+		const resultsList = document.getElementById('results')
+		new URLSearchParams(window.location.search).forEach((value,name) => {
+			resultsList.append(`${name}:${value}`)
+			resultsList.append(document.createElement('br'))
+		})
+	</script>
+	<footer>
+		<div class="footer">
+			<div>Copyright © 2020 X-Unity Printing. All rights reserved.</div>
+			<div style="font-family:Comic Neue"><strong style="font-size: 20px">Contact<br>Phone Number :60187799079<br>Email :xunity2020@gmail.com</strong></div>
+		</div>
+	</footer>
+</body>
+</html>
